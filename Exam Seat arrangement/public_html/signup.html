@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head><!--header files are added here-->
+<title>Exam Seating Arragement</title>
+                                        
+                                    
+                                        <!-- for-mobile-apps -->
+
+                                        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+<style>
+    .centered-form{
+	margin-top: 50px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.conaboutus{
+	padding-top:5px;
+	padding-left:100px;
+	padding-right:150px;
+	padding-bottom:250px;
+	height:300px;
+	background-image:url(images/custombrown.jpg);
+	background-position:center top;
+	background-repeat:repeat-y;
+	width:100%;
+	height:700px;
+	color:white;
+	background-attachment:scroll;
+	
+}
+navbar navbar-default{
+    color:violet;
+}
+.textsize{
+    
+    font-size: 12px;
+ 
+    
+}
+</style>
+
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+	<div class="container">
+	<div class="header-nav">
+            <nav class="navbar navbar-default">
+		<!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+			</button>
+				<div class="logo">
+			<a class="navbar-brand" href="index.html"><i class="fa fa-star"></i> Seating Arrangement</a>
+				</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-5">
+				<ul class="nav navbar-nav">
+						<!--<li class="hvr-sweep-to-bottom"><a href="index.html" class="scroll">About Project</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="Admin.html">Admin Login</a></li>-->
+					
+                <li class="hvr-sweep-to-bottom"><a href="studentprofile.html" class="scroll"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Student Profile</a></li>
+		<li class="hvr-sweep-to-bottom"><a href="index.html" class="scroll and fa fa-home" style="font-size: 1.1em;">&nbsp;&nbsp;Home</a></li>
+
+						<!--<li class="hvr-sweep-to-bottom"><a href="signup.html" class="scroll">Sign Up</a></li>-->
+				</ul>
+				</div><!-- /.navbar-collapse -->
+				</nav>
+                                </div>
+                                </div>
+                                </div>
+<!-- //header -->
+    <div class="conaboutus">
+<!--Forms-->
+	
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+        	<div class="panel-heading">
+                    <div class="panel panel-primary">
+                                
+                <div class="panel-heading" style="font-family: "Times New Roman", Times, serif;"><b>Registration Form</b>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                    
+                <a href="studentprofile.html" class="float-right btn btn btn-default mt-5"><b>Profile</b></a>
+                
+                        </div>
+			    		
+			</div>
+			 <div class="panel-body">
+			    
+                             
+                             <form role="form">
+			    			
+			    	<div class="row">
+			    	<div class="col-xs-8 col-sm-8 col-md-12">
+			    	<div class="form-group">
+                                    <input type="text" name="firstname" class="form-control input-sm"  onkeypress="return check(event,this);" placeholder="Enter First Name" required autofocus>
+                                </div>
+                                </div>
+                                                            
+                                <div class="col-xs-8 col-sm-8 col-md-12">
+                                <div class="form-group">
+                                <input type="text" id="demo" name="lastname" class="form-control input-sm" placeholder="Enter Last Name" onkeypress="return check(event,this);" required>
+                                  
+			                			
+                                </div>
+                                                                 
+			    					<!--<div class="form-group">
+                                                                   
+                                                                        <input list="browsers" name="browser" class="form-control input-sm" placeholder="Select Branch" required>
+                                                                  <datalist id="browsers">
+    <option value="Computer Engineering">
+    <option value="Information Technology">
+    <option value="Electronics Engineering">
+    <option value="Electrical Engineering">
+    <option value="Civil Engineering">
+    <option value="Mechanical Engineering">   
+  </datalist>
+                                                                </div>-->                                                                <div class="form-group">
+      <div class="textsize">
+      <label for="sel1"><b>Select Branch :</b></label></div>
+      <select class="form-control" id="sel1" placeholder="Select Branch" required>
+        <option></option>
+        <option>Computer Engineering</option>
+        <option>Information Technology</option>
+        <option>Electronics Engineering</option>
+        <option>Electrical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option></option>
+      </select>
+            </div>        
+                                                               
+                <div class="form-group">
+                <div class="textsize">
+      <label for="sel1"><b>Select Year & Semester :</b></label></div>
+      <select class="form-control" id="sel1" placeholder="Select Branch" required>
+        <option></option>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Fourth Year</option>
+        <option></option>
+      </select>
+                                                                    
+                                                 
+ <select class="form-control" id="sel1" placeholder="Select Branch" required>
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option></option>
+      </select>
+                                                                    
+                                                    </div>          </div>
+                                                                 <div class="col-xs-10 col-sm-10 col-md-12">
+                                                                     <div class="form-group">
+                                                                         <div class="textsize">
+                                                                             <b>Select Gender :</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                                  <input type="radio" name="gender"  placeholder="Male"><strong> Male</strong>
+                                  <input type="radio" name="gender"  placeholder="Male"><strong> Female</strong>
+			                			</div>
+                                                                         <div class="textsize">
+                                                                             <b>Select Type :</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                                  <input type="radio" name="examtype"  placeholder="Male"><strong> Regular</strong>
+                                  <input type="radio" name="examtype"  placeholder="Male"><strong> Backlog</strong>
+			                			</div>
+                                                                </div> </div>   
+               
+                                                                
+			    			<!--<input type="submit" value="Register" class="btn btn-info btn-default">
+                                               --> <!--<center><a href="signup.html" class="float-right btn btn btn-light mt-5"><b>Reset</b></a></center>
+			-->
+                       
+        	
+                    
+<center>
+    <input type="submit" value="Register" class="btn btn-info btn-info">
+                   <a href="signup.html" class="float-right btn btn btn-default mt-5"><b>Reset</b></a>
+       </center>
+              
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+      
+	
+<script>
+
+        function check(e, t) {
+            var b = document.getElementById("demo").value;
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else { return true; }
+                if ((charCode >= 65 && charCode <= 122 && b.length < 15))
+                    return true;
+                else
+                    return false;
+            }
+      
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head><!--header files are added here-->
+<title>Exam Seating Arragement</title>
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="popupfile.css">
+<style>
+    .centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.conaboutus{
+	padding-top:8px;
+	padding-left:100px;
+	padding-right:150px;
+	padding-bottom:300px;
+	height:300px;
+	background-image:url(images/custombrown.jpg);
+	background-position:center top;
+	background-repeat:repeat-y;
+	width:100%;
+	height:600px;
+	color:white;
+	background-attachment:scroll;
+	
+}
+navbar navbar-default{
+    color:violet;
+}
+
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 100px;
+    padding: 40px 0px 20px 0px;
+    background-color: #CCCCCC;
+ 
+    box-shadow: 1px 8px 6px 5px lightgray;
+    border: 5px solid;
+}
+
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.textsize{
+    
+    font-size: 25px;
+    
+}
+</style>
+
+</head>
+
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+						<a class="navbar-brand" href="index.html"><i class="fa fa-star"></i> Seating Arrangement</a>
+						</div>
+                   </div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-5">
+					 <ul class="nav navbar-nav">
+						
+                                            
+                                             <li class="hvr-sweep-to-bottom"><a href="index.html" class="scroll" style="font-size: 1.2em;"><i class="fa fa-home">&nbsp; Home</i></a></li>
+					 </div> 
+                                         </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+	</div>
+
+					
+	
+           
+<!-- //header -->
+<div class="conaboutus">
+<!--Forms-->
+                            <div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+           <div class="panel-heading">
+            <div class="account-wall">
+               <img class="profile-img" src="profile.png" alt="Image">
+                
+               
+               
+               <form class="form-signin">
+                <input type="text" id="demo" class="form-control" placeholder="Admin Id" onkeypress="return check(event,this);" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Sign in</button>
+                
+                
+                
+                <center><br>
+                <div class="popup" onclick="myFunction()">
+                    <b><font style="color: #337ab7;font-size: small">Need help ?</font></b><span class="clearfix"></span><span class="popuptext" id="myPopup">Enter Authenticated Admin Information !!!</span>
+                </div>
+                    </center>
+                </form>
+       </div>     
+    </div>
+</div>
+
+        <script>
+
+        function check(e, t) {
+            var b = document.getElementById("demo").value;
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else { return true; }
+                if (((charCode >= 65 && charCode <= 122)&&(b.length < 15) || ( charCode>=48 && charCode<=57 ) ))
+                    return true;
+                else
+                    return false;
+            }
+      
+
+    </script>
+
+        
+        <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+                <!-- Form End -->
+              
+
+</html>
